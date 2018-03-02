@@ -3,6 +3,15 @@
 
 import socket
 
-iprange = input('Enter IP Address Range:')
-portrange = input('Enter Port Range:')
+iprange = raw_input('Enter IP Address Range: ')
+portrange = input('Enter Port Range: ')
+
+if "-" in iprange:
+	ipAddr = iprange.split("-")
+	print ipAddr
+
+#elif "/" in iprange:
+        
+else:
+        print("Enter Correct IP Range")
 
